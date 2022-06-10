@@ -34,6 +34,20 @@
             }
         }
     }
+    .consultation{
+        h2{
+            text-align: center;
+            font-size: 23px;
+            line-height: 40px;
+        }
+        &__descr{
+            text-align: center;
+        }
+        form{
+           margin: 0 auto;
+           margin-top: 36px; 
+        }
+    }
 }
 //----------------------------------
 @media (max-width: 575.98px){
@@ -66,6 +80,16 @@
         }
         &__icons{
             width: 315px;
+        }
+    }
+    .consultation{
+        h2{
+            font-size: 15px;
+            line-height: 25px;
+        }
+        &__descr{
+            font-size: 15px;
+            line-height: 20px;
         }
     }
 }

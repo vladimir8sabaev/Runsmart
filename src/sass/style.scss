@@ -3,8 +3,11 @@
 @import "blocks/_header.scss";
 @import "blocks/_buttons.scss";
 @import "blocks/pros";
+@import "blocks/consultation.scss";
+@import "blocks/titles.scss";
+@import "blocks/_forms.scss";
+//LAST IMPORT
 @import "_media.scss";
-
 *{
 	font-family: "MuseoModerno", sans-serif;
 }
