@@ -3,7 +3,37 @@
 }
 //----------------------------------
 @media (max-width:990.98px){
-
+	.carousel{
+		padding: 50px 0;
+		&__inner{
+			width: 80%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.reviews{
+		&__items{
+			width: 90%;
+			justify-content: center;
+			align-items:center;
+			margin: 0 auto;
+		}
+		&__item{
+			flex-direction: column;
+			align-items:center;
+			justify-content: center;
+			img{
+				margin-bottom: 10px;
+				margin-right: 0;
+			}
+			&_text{
+			}
+			&_title, &_subtitle{
+				text-align: center;
+			}
+		}
+	}
 }
 //----------------------------------
 @media (max-width: 767.98px){
@@ -48,9 +78,24 @@
 		margin-top: 36px; 
 		}
 	}
+	.catalog{
+		&__content{
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+	}
+	.reviews{
+		&__items{
+			&_text{
+				width: 300px;
+			}
+
+		}
+
+	}
 }
 //----------------------------------
-@media (max-width: 575.98px){
+@media (max-width: 575.98px){         
 	.header{
 		&__logo{
 			width: 160px;
@@ -84,12 +129,32 @@
 	}
 	.consultation{
 		h2{
-			font-size: 15px;
+			font-size: 16px;
 			line-height: 25px;
 		}
 		&__descr{
 			font-size: 15px;
 			line-height: 20px;
+		}
+		.feed-form{
+			align-items:center;
+			width: 99%;
+			input{
+				width: 90%;
+				align-items:center;
+			}
+			.button_submit{
+				width: 90%;
+			}
+		}
+		
+	}
+	.catalog{
+		&__tabs{
+			flex-direction: column;
+		}
+		&__tab{
+			margin-top: 10px;
 		}
 	}
 }

@@ -4,15 +4,15 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 2000,
 		prevArrow: '<button id="prev" type="button"  class="slick-prev"> <img src="icons/left.svg"> </button>',
-		nextArrow: '<button id="prev" type="button"  class="slick-next"> <img src="icons/right.svg"> </button>',
+		nextArrow: '<button id="next" type="button"  class="slick-next"> <img src="icons/right.svg"> </button>',
 		responsive: [
 			{
 			breakpoint: 768,
 			settings: {
-			dots: true,
+			dots: false,
 			arrows: false
 			}
-			},
+			}
 		]
 
 	});

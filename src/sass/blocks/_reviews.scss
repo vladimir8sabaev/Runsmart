@@ -10,19 +10,20 @@
         display: flex;
         flex-wrap: wrap;
         width: 915px;
-        
     }
     &__item{
         display: flex;
         margin-top: 40px;
         align-items: flex-start;
+        width: 889px;
         img{
             width: 169px;
             height: 169px;
             margin-right: 60px;
         }
         &_text{
-            width: 660px;
+            //width: 660px;
+            flex-wrap: wrap;
         }
         &_title{
             font-weight: 700;
