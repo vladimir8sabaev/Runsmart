@@ -1,4 +1,5 @@
 .reviews{
+    padding-bottom: 50px;
     &__title{
         font-weight: 700;
         font-size: 30px;
@@ -22,7 +23,6 @@
             margin-right: 60px;
         }
         &_text{
-            //width: 660px;
             flex-wrap: wrap;
         }
         &_title{

@@ -14,7 +14,7 @@
 	}
 	.reviews{
 		&__items{
-			width: 90%;
+			width: 80%;
 			justify-content: center;
 			align-items:center;
 			margin: 0 auto;
@@ -28,10 +28,16 @@
 				margin-right: 0;
 			}
 			&_text{
+				width: 90%;
 			}
 			&_title, &_subtitle{
 				text-align: center;
 			}
+		}
+	}
+	.footer{
+		&__info{
+			top: 40px;
 		}
 	}
 }
@@ -155,6 +161,18 @@
 		}
 		&__tab{
 			margin-top: 10px;
+		}
+	}
+	.footer{
+		&__info{
+			width: 200px;
+			border-radius: 15px;
+			padding: 40px 10px;
+		}
+		&__social-item{
+			width: 40px;
+        	height: 40px;
+        	margin: 0 7px;
 		}
 	}
 }

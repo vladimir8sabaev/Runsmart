@@ -82,11 +82,13 @@
 			font-size: 14px;
 			line-height: 14px;
 			text-align: center;
-			text-decoration-line: underline;
-			text-underline-offset: 1px;
 			color: $main-color;
+            text-decoration-line: none;
 			&:hover{
+                transition: 0.3s all;
 				color: $main-color;
+                text-decoration-line: underline;
+			    text-underline-offset: 1px;
 			}
 		}
 		hr{
@@ -169,11 +171,13 @@
             font-size: 14px;
             line-height: 14px;  
             text-align: center;
-			text-decoration-line: underline;
-			text-underline-offset: 1px;
+			text-decoration-line: none;
             text-transform: uppercase;
             &:hover{
+                transition: 0.3s all;
                 color: $main-color;
+                text-decoration-line: underline;
+			    text-underline-offset: 1px;
             }
 
         }
