@@ -32,4 +32,44 @@ $(document).ready(function(){
 	};
 	toggleSlide('.catalog-item__link');
 	toggleSlide('.catalog-item__back');
+
+	//modal
+
+	$('[data-madal=consultation]').on('click',function(){
+		$('.overlay, #consultation').fadeIn();
+	});
+
+	$('.madal__close').on('click',function(){
+		$('.overlay, #consultation, #thanks, #order').fadeOut();
+	});
+
+	$('.button_mini').each(function(i){
+		$(this).on('click', function(){
+			$('#order .madal__descr').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn();
+		});
+	});
+	
+	$('.feed-form').validate();
+
+	$('#consultation form').validate({
+		rules: {
+			name: "required",
+			phone: "required",
+			email: {
+				required:true,
+				email: true
+			}
+		},
+		messages: {
+			name: "Введите свое имя",
+			phone: "Введите свой номер",
+			email: {
+			  required: "Введите свою почту",
+			  email: "Неправильная почта"
+			}
+		}
+	});
+	$('#order form').validate();
+	$('#consultation-form form').validate();
 });
