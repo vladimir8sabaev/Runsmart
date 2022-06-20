@@ -49,27 +49,30 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn();
 		});
 	});
-	
-	$('.feed-form').validate();
 
-	$('#consultation form').validate({
-		rules: {
-			name: "required",
-			phone: "required",
-			email: {
-				required:true,
-				email: true
+	function validForms(form){ 
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required:true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Введите свое имя",
+				phone: "Введите свой номер",
+				email: {
+				  required: "Введите свою почту",
+				  email: "Неправильная почта"
+				}
 			}
-		},
-		messages: {
-			name: "Введите свое имя",
-			phone: "Введите свой номер",
-			email: {
-			  required: "Введите свою почту",
-			  email: "Неправильная почта"
-			}
-		}
-	});
-	$('#order form').validate();
-	$('#consultation-form form').validate();
+		});
+	};
+	validForms('#consultation-form');
+	validForms('#consultation form');
+	validForms('#order form');
+
+	$('input[name = phone]').mask("+7 (999) 999-9999");
 });
