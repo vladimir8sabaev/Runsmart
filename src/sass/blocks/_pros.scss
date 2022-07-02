@@ -45,4 +45,9 @@
             }
         }
     }
+    &__icon{
+        animation-name: heartbeat;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
 }

@@ -1,4 +1,5 @@
 @import "base/_variables.scss";
+@import "base/animations.scss";
 @import "blocks/_promo.scss";
 @import "blocks/_header.scss";
 @import "blocks/_buttons.scss";
@@ -11,12 +12,16 @@
 @import "blocks/_reviews.scss";
 @import "blocks/footer.scss";
 @import "blocks/madal.scss";
+@import "blocks/pageup.scss";
+
 //LAST IMPORT
 @import "_media.scss";
 *{
 	font-family: "MuseoModerno", sans-serif;
 }
-
+html, body { 
+	scroll-behavior: smooth !important;
+}
 .container{
 	max-width: 950px;
 	margin: 0 auto;

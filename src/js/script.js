@@ -75,4 +75,15 @@ $(document).ready(function(){
 	validForms('#order form');
 
 	$('input[name = phone]').mask("+7 (999) 999-9999");
+
+	//smooth scroll/pageup
+
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else{
+			$('.pageup').fadeOut();
+		}
+	});
+	new WOW().init();
 });
