@@ -87,4 +87,20 @@ $(document).ready(function(){
 	});
 	new WOW().init();
 
+	$('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            method: 'POST',
+			url: 'https://formsubmit.co/ajax/vladimir8sabaev@gmail.com',
+			dataType: 'json',
+			accepts: 'application/json',
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
