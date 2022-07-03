@@ -36,17 +36,17 @@ $(document).ready(function(){
 	//modal
 
 	$('[data-madal=consultation]').on('click',function(){
-		$('.overlay, #consultation').fadeIn();
+		$('.overlay, #consultation').fadeIn('slow');
 	});
 
 	$('.madal__close').on('click',function(){
-		$('.overlay, #consultation, #thanks, #order').fadeOut();
+		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	});
 
 	$('.button_mini').each(function(i){
 		$(this).on('click', function(){
 			$('#order .madal__descr').text($('.catalog-item__subtitle').eq(i).text());
-			$('.overlay, #order').fadeIn();
+			$('.overlay, #order').fadeIn('slow');
 		});
 	});
 
@@ -86,4 +86,5 @@ $(document).ready(function(){
 		}
 	});
 	new WOW().init();
+
 });
