@@ -19,6 +19,8 @@
     "sass": "^1.52.2"
   },
   "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "jquery-validation": "^1.19.4"
   }
 }
